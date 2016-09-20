@@ -1,10 +1,16 @@
 function updateCountdown() {
-    var remaining = 140 - jQuery('.text').val().length;
-    jQuery('.counter').text(remaining);
+  var remaining = 140 - $('.text').val().length;
+  $('.counter').text(remaining);
+  if (remaining < 0) {
+    $('.counter').addClass("redText");
+  } else {
+    $('.counter').removeClass("redText");
+  }
 }
 
-jQuery(document).ready(function($) {
-    updateCountdown();
+$(document).ready(function($) {
+  updateCountdown();
     $('.text').change(updateCountdown);
     $('.text').keyup(updateCountdown);
-});
+})
+
