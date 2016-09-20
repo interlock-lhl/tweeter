@@ -1,0 +1,35 @@
+main.container {
+  border-radius: 15px;
+  height: 170px;
+  padding: 15px;
+  margin-top: 25px;
+}
+
+.text {
+  padding: 10px;
+  width: 620px;
+  height: 50px;
+  float: left;
+  border-radius: 10px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+
+button, input {
+  clear: both;
+  margin-left: 1px;
+}
+
+.counter {
+  float: right;
+  font-size: medium;
+  font-style: italic;
+  margin-right: 7px;
+  margin-top: 4px;
+}
+
+h2 {
+  border-bottom: 1px solid #00a087;
+  margin: 4px;
+  padding: 3px;
+}
