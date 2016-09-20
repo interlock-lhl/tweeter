@@ -8,17 +8,23 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
-}
+  font-family: 'Roboto Condensed', sans-serif;
 
-/*
- * Global layout stuff
- */
+}
 
 body {
   margin: 0;
   color: #244751;
   background-color: #eee;
 }
+
+main.container {
+  width: 450px;
+  margin: 0 auto;
+  background: white;
+}
+
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
