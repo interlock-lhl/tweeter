@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/all-tweets.css" type="text/css" />
 
 
     <!-- External JS -->
@@ -33,10 +35,10 @@
     </nav>
 
     <!-- Page-specific (main) content here -->
-    <main class="container">
+  <main class="container">
 
-  <section class="new-tweet">
-   <h2>Compose Tweet</h2>
+  <section class="compose-tweet">
+    <h2>Compose Tweet</h2>
 
    <form action="http://localhost:8080/tweets/" method="POST">
     <textarea class="text" placeholder="What are you humming about?"></textarea>
@@ -45,7 +47,24 @@
    </form>
   </section>
 
-    </main>
+
+<article class="tweet">
+  <header>
+  <img class="profile-pic" src="/images/bird.png">
+  <p class="twitter-handle">@sarahveness</p>
+  <p class="username">SARAH VENESS</p>
+  </header>
+
+<body>
+<p class="tweet-content">This is a tweet. See?</p>
+</body>
+
+<footer>
+<p class="date">10 DAYS AGO</p>
+</footer>
+</article>
+
+  </main>
 
   </body>
 </html>
