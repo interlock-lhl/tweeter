@@ -1,5 +1,4 @@
-$(document).ready(function($) {
-  function updateCountdown() {
+function updateCountdown() {
   var remaining = 140 - Array.from($('.text').val()).length;
   $('.counter').text(remaining);
   if (remaining < 0) {
@@ -8,9 +7,7 @@ $(document).ready(function($) {
     $('.counter').removeClass("redText");
   }
 }
-  updateCountdown();
-    // $('.text').paste(updateCountdown);
-    $('.text').on("keyup change", (updateCountdown));
-
-})
+  // updateCountdown();
+  //   // $('.text').paste(updateCountdown);
+  //   $('.text').on("keyup change", (updateCountdown));
 
