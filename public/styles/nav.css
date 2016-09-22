@@ -1,5 +1,5 @@
 #nav-bar {
-  position: relative;
+  /*position: relative;*/
   height: 80px;
   width: 100%;
   background-color: #00a087;
@@ -7,15 +7,18 @@
   padding: 0em 2em;
 }
 
-#nav-bar .logo {
+#nav-bar .brand .logo {
   width: 80px;
   height: 80px;
+  display: block;
   float: left;
   margin: 0px 10px 0px 0px;
 }
 
- #nav-bar .header {
+#nav-bar .brand .header {
+  display: block;
   float: left;
-  line-height: 2.5;
+  line-height: 80px;
+  height: 80px;
   font-size: 2em;
 }
