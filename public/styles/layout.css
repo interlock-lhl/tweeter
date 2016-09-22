@@ -21,11 +21,10 @@ body {
 main.container {
   width: 650px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 15px;
   background: white;
   border-radius: 10px;
-  padding-top: 12px;
-  height: 456px;
+  padding: 12px;
 
 }
 
