@@ -18,39 +18,34 @@
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
-
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
-
-  <body>
 
   <!-- Top nav bar (fixed) -->
   <nav id="nav-bar">
     <div class="brand">
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
+      <input type='button' id='hideshow' value='Compose'>
     </div>
   </nav>
 
     <!-- Page-specific (main) content here -->
   <main class="container">
-    <section class="compose-tweet">
+    <div id="compose-tweet">
       <h2>Compose Tweet</h2>
 
       <form action="/tweets" method="POST">
-        <textarea class="text" name="text" placeholder="What are you humming about?"></textarea>
-        <input type="submit" value="Tweet">
+        <textarea class="text" name="text" id="textarea" placeholder="What are you humming about?"></textarea>
+        <input type="submit" id="compose" value="Tweet">
+        <span class="alert">Your tweet is too long!</span>
         <span class="counter">140</span>
       </form>
-
-    </section>
-
-    <div class="tweets" id="tweetcontainer">
-
     </div>
 
+    <div class="tweets" id="tweetcontainer">
+    </div>
   </main>
- </body>
 </html>
