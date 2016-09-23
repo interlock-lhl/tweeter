@@ -1,8 +1,10 @@
 /*COMPOSE TWEET CSS*/
 
-.compose-tweet {
-  /*background: white;*/
-  /*margin-top: 24px;*/
+#compose-tweet.nothidden {
+  display: block;
+}
+
+#compose-tweet {
   margin-bottom: 25px;
   margin-right: auto;
   margin-left: auto;
@@ -12,26 +14,31 @@
   border-radius: 10px;
   width: 625px;
   height: 180px;
-
+  display: none;
 }
 
-.compose-tweet .text {
+#compose-tweet .text {
   padding: 9px;
   width: 606px;
   height: 65px;
   float: left;
   border-radius: 10px;
   margin-top: 10px;
-
+  overflow-wrap: break-word;
 }
 
-.compose-tweet button, input {
+#compose-tweet button, input {
   clear: both;
   margin-left: 1px;
   margin-top: 10px;
 }
 
-.compose-tweet .counter {
+#compose-tweet span.alert {
+  margin-left: 10px;
+  display: none;
+}
+
+#compose-tweet .counter {
   float: right;
   font-size: medium;
   font-style: italic;
@@ -39,7 +46,7 @@
   margin-top: 10px;
 }
 
-.compose-tweet h2 {
+#compose-tweet h2 {
   border-bottom: 1px solid #00a087;
   margin: 4px;
   padding: 3px;
@@ -51,16 +58,10 @@
 
 /* ALL TWEETS CSS*/
 
-/*article {
-
-}*/
-
-.after {
+article {
   border: 2px solid #00a087;
   border-radius: 11px;
-  margin: 10px auto 37px auto;
-  width: 625px;
-  height: 205px;
+  margin: 2em;
 }
 
 article header {
@@ -71,7 +72,7 @@ article header {
   height: 100px;
 }
 
-header img {
+article header img {
   height: 75px;
   width: 75px;
   float: left;
@@ -79,12 +80,12 @@ header img {
   margin-right: 10px;
   margin-top: 10px;
   border-radius: 20px;
-
 }
 
-header img:hover {
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
+article header img:hover {
+  -webkit-transform: rotateZ(-30deg);
+  -ms-transform: rotateZ(-30deg);
+  transform: rotateZ(-30deg);
 }
 
 .tweet .username:hover {
@@ -98,30 +99,26 @@ header img:hover {
 }
 
 article span {
-  margin: 10px 10px 35px 10px;
   display: block;
+  overflow-wrap: break-word;
+  padding: 8px;
 }
 
 .tweet .date {
 font-size: 13px;
 font-style: italic;
 float: left;
-margin-top: 11px;
+margin-top: 10px;
 }
 
 footer img {
   float: right;
-  height: 20px;
-  width: 20px;
-  margin-right: 7px;
-  margin-top: 8px;
   opacity: 0;
+  height: 35px;
 }
 
 footer img:hover {
   float: right;
-  height: 20px;
-  width: 20px;
   margin-right: 7px;
   opacity: 100;
 }
@@ -130,4 +127,5 @@ footer img:hover {
 footer {
   border-top: 1px dashed #00a087;
   padding: 0px 0px 0px 8px;
+  height: 35px;
 }
