@@ -22,3 +22,16 @@
   height: 80px;
   font-size: 2em;
 }
+
+#nav-bar input {
+  float: right;
+  padding: 10px;
+  margin-right: 257px;
+  margin-top: -61px;
+  border-radius: 8px;
+  background-color: #e8e8e8;
+}
+
+#nav-bar input:hover {
+  color: #00a087;
+}
