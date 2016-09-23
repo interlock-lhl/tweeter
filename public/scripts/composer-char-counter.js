@@ -2,12 +2,16 @@ function updateCountdown() {
   var remaining = 140 - Array.from($('.text').val()).length;
   $('.counter').text(remaining);
   if (remaining < 0) {
-    $('.counter').addClass("redText");
+    $("#compose").attr("disabled","disabled");
+    $('.alert').show();
+    $('.counter').addClass("redText").on('click', function(event) {
+      event.preventDefault();
+    });
   } else {
     $('.counter').removeClass("redText");
+    $('.alert').hide();
+    $("#compose").removeAttr("disabled","disabled");
   }
 }
-  // updateCountdown();
-  //   // $('.text').paste(updateCountdown);
-  //   $('.text').on("keyup change", (updateCountdown));
+
 
